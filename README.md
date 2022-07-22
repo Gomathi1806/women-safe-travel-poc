@@ -1,6 +1,7 @@
 
 
-# A full stack dApp starter built on Ethereum (Solidity) with Next.js (React)
+# Women Safety Travel App
+There will be two users one is user and the other one is watcher. User will share the Travel details and watcher can watch her till she reaches safe and she will be rewarded by the user.
 
 This repo contains boilerplate code for interacting with a simple smart contract from the client-side using [Solidity](https://soliditylang.org/), [React](https://reactjs.org/) and [TailwindCSS](https://tailwindcss.com/).
 
@@ -40,8 +41,8 @@ Deploy the smart contract to the local blockchain for testing with `npx hardhat 
 If you're successful, you'll be presented with a number of account details in the CLI. Here's an example:
 
 ```
-Account #0: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 (10000 ETH)
-Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+Account #0: 0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199 (10000 ETH)
+Private Key: 0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e
 ```
 
 Then in a new terminal window, `npx hardhat run scripts/deploy.js --network localhost`.
@@ -50,13 +51,14 @@ If you're successful, you'll get something like the following CLI output:
 
 ```
 Greeter deployed to: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Tripdetails deployed to: 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
 ```
 
 ### Adding A Local Account To MetaMask
 
 Open your MetaMask browser extension and change the network to `Localhost 8545`.
 
-Next, import one of the accounts by adding its Private Key (for example, `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80` to MetaMask.
+Next, import one of the accounts by adding its Private Key (for example, `0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e` to MetaMask.
 
 If you're successful, you should see the a balance resembling something like `10000 ETH` in the wallet.
 
@@ -92,6 +94,7 @@ A sample test can be found in `test/sample-test.js`.
 
 ## Deploying To The Ropsten Test Network
 
+tripdetails deployed : 0xc495008c5d0871962169aef80402472f43d34df1afb36e5bb5a15b042d711005
 *This is a more advanced step after running the smart contract locally.*
 
 Up to now, the smart contract has been running on a local blockchain. The next step, is to test how it works on a live test network. We'll do this by deploying to Ropsten.
