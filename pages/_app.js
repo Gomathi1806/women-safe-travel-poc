@@ -1,12 +1,8 @@
 import '../styles/globals.css'
-import { ProofOfHumanityProvider } from 'poh-react'
+import '../styles/styles.css'
 
 function MyApp ({ Component, pageProps }) {
-  return (
-    <ProofOfHumanityProvider>
-      <Component {...pageProps} />
-    </ProofOfHumanityProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
